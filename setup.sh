@@ -10,3 +10,5 @@ chmod +x ~/bin/Git ~/bin/gitset
 
 cd gitkeys/SSH 
 cp config* carreerit indexit linuxauto ~/.ssh
+cd ~/.ssh
+chmod 600 *
