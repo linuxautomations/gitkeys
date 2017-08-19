@@ -1,5 +1,6 @@
 #!/bin/bash
 
+yum install git -y &>/dev/null
 git clone https://linuxautomations@bitbucket.org/linuxautomations/gitkeys.git
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
