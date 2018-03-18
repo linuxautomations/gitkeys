@@ -1,6 +1,10 @@
 #!/bin/bash
 
-yum install git -y &>/dev/null
+type git &>/dev/null 
+if [ $? -ne 0 ]; then 
+	sudo yum install git -y &>/dev/null
+	[ $? -ne 0 ] && echo "Unable to install GIT" && exit 1
+fi
 PWD=$(pwd)
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
